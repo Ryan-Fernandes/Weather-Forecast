@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Now</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--BOOTSTRAP CSS-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--ANIMATE CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
+        
+</head>
+
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Weather Now</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="form-row">
+            <div class="card mx-auto">
+                <div class="card-header text-white" style="background-color: #00AA9E;">
+                    <span class="animated bounce">Forecast</span>
+                    <select name="type" id="type" style="float: right; background-color: darkturquoise; border: none">
+                        <option value="current">Current</option>
+                        <option value="forecast">5 days per 3 hours</option>
+                        <!--<option value="daily">Daily (1 week)</option>-->
+                    </select>
+                </div>
+                <div class="card-body">
+                    <input id="city_val" type="text" placeholder="Enter City Name">
+                    <button id="city_search" class="btn btn-primary">Search</button>
+                    <div class="current"></div>
+                </div>
+                <div class="card-footer" id="error_message" style="display: none">
+                    <p class="text-danger">Text Field cannot be empty!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            
+    </div>
+   
+</body>
+    <!--<footer class="footer text-center navbar-default navbar-fixed-bottom">
+        <div class="container">
+            Created by Ryan Fernandes
+        </div>
+    </footer>-->
+    <style>
+        .footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <!--Jquery js-->  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+    
+    <!--Bootstrap js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="js/weather.js"></script>
+</html>
